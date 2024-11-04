@@ -1,0 +1,749 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e7;
+    color: #502314;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h2, h3 {
+    color: #502314;
+}
+/* Slider */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow:hidden;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    animation:slide  6s infinite;
+}
+
+.slides img {
+    width: 25%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-40%);
+    }
+}
+/* Header Container */
+header {
+    background-color:#f8f1e7;   /* Dark background for the header */
+    color: #502314;              /* White text color */
+    padding: 20px 0;          /* Padding around the header content */
+    text-align: center;       /* Center-aligns the header content */
+}
+
+/* Website Name (H1) */
+header h1 {
+    margin: 0;                /* Removes default margin */
+    font-size: 2.5rem;        /* Large font size for the website name */
+    font-weight: bold;        /* Bold text for emphasis */
+    letter-spacing: 9px;     /* Slight letter spacing for a modern look */
+    font-family: fantasy;
+}
+
+/* Navigation Menu */
+header nav ul {
+    list-style-type: none;    /* Removes bullet points */
+          /* Adds space above the menu */
+    padding: 0;               /* Removes default padding */
+    display: flex;            /* Flexbox layout for horizontal alignment */
+    justify-content: center;  /* Centers the navigation items */
+    background-color:burlywood;
+}
+
+/* Navigation Items */
+header nav ul li {
+    margin: 0 15px;           /* Adds horizontal spacing between menu items */
+}
+
+/* Navigation Links */
+header nav ul li a {
+    color: #502314;              /* White text color for links */
+    font-size: 1rem;          /* Standard font size */
+    padding: 5px;             /* Adds padding around the links */
+    text-transform: uppercase;/* Uppercase text for a uniform look */
+    transition:transform ease-in-out;/* Smooth color transition on hover */
+    font-family: serif;
+    
+
+}
+header nav ul li a:hover{
+    color:#f8f1e7;
+}
+
+
+
+
+/* Navbar Styles */
+nav {
+    color: #502314;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    background-color:burlywood;
+}
+
+nav ul li a {
+    color: #502314;
+    padding: 8px 16px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: #502314;
+    color: #f8f1e7;
+
+}
+
+/* Slider Styles */
+.slider {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    height: 400px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Shop by Category Styles */
+#shop-by-category {
+    background-color: #f8f1e7;
+    padding: 20px;
+    text-align: center;
+}
+#shop-by-category h2{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: burlywood;
+    text-align: center;
+}
+.categories {
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content:center;
+}
+
+.category {
+    flex:1;
+    margin: 10px;
+}
+
+.category img {
+    width: 50%;
+}
+
+.category h3 {
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Latest Products Styles */
+#latest-products {
+    background-color: #f8f1e7;
+    padding: 20px;
+    text-align: center;
+
+}
+#latest-products h2{
+    background-color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+/* Features Section Styles */
+#features {
+    background-color: #502314;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+#features h2{
+    color: #f8f1e7;
+}
+#features h3{
+    color:#f8f1e7;
+}
+#features h5{
+    color: #f8f1e7;
+    font-size: 1.3rem;
+}
+
+.feature {
+    margin-bottom: 20px;
+    color: #f8f1e7;
+}
+.feature a{
+    color: white;
+    text-decoration: underline;
+}
+
+.feature img {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.review-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f8f1e7;
+}
+
+.review-form input[type="text"], .review-form select, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-form button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #fff;
+    color:#502314;
+}
+
+.reviews-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.review-item h5 {
+    margin: 0;
+    color: #007bff;
+}
+
+.review-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Scroll to Top Button Styles */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTop:hover {
+    background-color: #555;
+}
+
+/* Products Page Styles */
+/* Categories Section Styles */
+.categories-section {
+    padding: 40px 20px;
+    background-color: #f8f1e7;
+    text-align: center;
+}
+
+.categories-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-decoration-line: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    flex: 1;
+    margin: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item img {
+    max-height:300px;
+    max-width: 300px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.category-item .buy-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.category-item .buy-now:hover {
+    background-color: #0056b3;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#pname{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product-item img {
+
+    min-width: 300px;
+    max-width: 300px;
+    max-height:250px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.product-item .view-product {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:red;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.product-item .view-product:hover {
+    background-color: #0056b3;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item {
+        max-width: 100%;
+    }
+}
+
+/* Product View Page Styles */
+#product-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+#product-view h3{
+    font-size: 1.3rem;
+}
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.product-images {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-images img:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-info .add-to-cart {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-info .add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.related-products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Cart Page Styles */
+#cart {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right:auto ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#cart .proceedtocheck{
+
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#cart .proceedtocheck:hover{
+    background-color: #0056b3;
+
+}
+
+.tab1{
+    margin-left: auto;
+    margin-right:auto ;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table img{
+    width: 100px;
+    height: 100px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Checkout Page Styles */
+#checkout {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#checkout h2{
+    font-size: 2rem;
+}
+#checkout h3{
+    font-size: 1.4rem;
+}
+.order-summary {
+    margin-bottom: 20px;
+}
+.shipping-info button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.shipping-info button:hover {
+    background-color: #0056b3;
+}
+
+.shipping-info form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.shipping-info label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.shipping-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Order Confirmation Page Styles */
+.order-confirmation {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.order-confirmation .gotohome{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+.order-confirmation .gotohome:hover{
+    background-color: #0056b3;
+}
+
+/* About Us Page Styles */
+#about-us {
+    background-color:white;
+    padding: 30px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+#about-us img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Contact Us Page Styles */
+#contact-us {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-info a{
+    text-decoration: underline;
+}
+#contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Search Page Styles */
+#search-page {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.search-results .product {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+#cart #return-to-home:hover{
+    background-color: blue;
+}

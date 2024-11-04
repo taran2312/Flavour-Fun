@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <meta name="description" content="Style Fusion - The best place to buy clothes, watches, and shoes online.">
+    <meta name="keywords" content="Style Fusion, fashion, clothes, watches, shoes">
+
+</head>
+<body>
+
+    <header>
+        <h1>Flavour Fun</h1>
+        <!-- or, if you're using a logo -->
+        
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Categories</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+    <!-- Checkout Page -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Peppy Paneer: ₹1347</p>
+            <p>Afghani Momos: ₹300</p>
+            <p><strong>Total: ₹1647</strong></p>
+        </div>
+        <div class="shipping-info">
+            <h3>Shipping Information</h3>
+            <form action="orderconfirmation.html">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2024 Flavour Fun. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
